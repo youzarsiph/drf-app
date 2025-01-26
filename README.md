@@ -1,14 +1,14 @@
-# django-app
+# drf-app
 
-[![CI](https://github.com/youzarsiph/django-app/actions/workflows/ci.yml/badge.svg)](https://github.com/youzarsiph/django-app/actions/workflows/ci.yml)
-[![CD](https://github.com/youzarsiph/django-app/actions/workflows/cd.yml/badge.svg)](https://github.com/youzarsiph/django-app/actions/workflows/cd.yml)
-[![Code Style: Black](https://github.com/youzarsiph/django-app/actions/workflows/black.yml/badge.svg)](https://github.com/youzarsiph/django-app/actions/workflows/black.yml)
-[![Code Linting: Ruff](https://github.com/youzarsiph/django-app/actions/workflows/ruff.yml/badge.svg)](https://github.com/youzarsiph/django-app/actions/workflows/ruff.yml)
-[![Code Testing](https://github.com/youzarsiph/django-app/actions/workflows/tests.yml/badge.svg)](https://github.com/youzarsiph/django-app/actions/workflows/tests.yml)
-[![PyPI - Version](https://img.shields.io/pypi/v/django-app?logo=pypi&logoColor=white)](https://pypi.org/project/django-app/)
-[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/django-app?logo=python&logoColor=white)](https://pypi.org/project/django-app/)
-[![PyPI - Downloads](https://img.shields.io/pypi/dm/django-app?logo=pypi&logoColor=white)](https://pypi.org/project/django-app/)
-[![PyPI - License](https://img.shields.io/pypi/l/django-app?logo=pypi&logoColor=white)](https://pypi.org/project/django-app/)
+[![CI](https://github.com/youzarsiph/drf-app/actions/workflows/ci.yml/badge.svg)](https://github.com/youzarsiph/drf-app/actions/workflows/ci.yml)
+[![CD](https://github.com/youzarsiph/drf-app/actions/workflows/cd.yml/badge.svg)](https://github.com/youzarsiph/drf-app/actions/workflows/cd.yml)
+[![Code Style: Black](https://github.com/youzarsiph/drf-app/actions/workflows/black.yml/badge.svg)](https://github.com/youzarsiph/drf-app/actions/workflows/black.yml)
+[![Code Linting: Ruff](https://github.com/youzarsiph/drf-app/actions/workflows/ruff.yml/badge.svg)](https://github.com/youzarsiph/drf-app/actions/workflows/ruff.yml)
+[![Code Testing](https://github.com/youzarsiph/drf-app/actions/workflows/tests.yml/badge.svg)](https://github.com/youzarsiph/drf-app/actions/workflows/tests.yml)
+[![PyPI - Version](https://img.shields.io/pypi/v/drf-app?logo=pypi&logoColor=white)](https://pypi.org/project/drf-app/)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/drf-app?logo=python&logoColor=white)](https://pypi.org/project/drf-app/)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/drf-app?logo=pypi&logoColor=white)](https://pypi.org/project/drf-app/)
+[![PyPI - License](https://img.shields.io/pypi/l/drf-app?logo=pypi&logoColor=white)](https://pypi.org/project/drf-app/)
 
 ## Overview
 
@@ -73,6 +73,8 @@ To initiate a new project using this template, follow these steps:
       "app",
       "app.books",
       "app.users",
+      "drf_redesign",
+      "rest_framework",
       # Default apps
       ...
    ]
@@ -104,7 +106,7 @@ We warmly welcome contributions from the community. Please refer to our [CONTRIB
 
 ## Support
 
-For inquiries or support, please open an issue or join the discussion in the [GitHub Discussions](https://github.com/youzarsiph/django-app/discussions) section to engage with the community.
+For inquiries or support, please open an issue or join the discussion in the [GitHub Discussions](https://github.com/youzarsiph/drf-app/discussions) section to engage with the community.
 
 ## Licensing
 

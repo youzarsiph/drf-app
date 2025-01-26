@@ -1,44 +1,29 @@
 """ Views for app.books """
 
-from django.contrib.auth.mixins import LoginRequiredMixin
-from django.urls import reverse_lazy
-from django.views import generic
+from rest_framework.viewsets import ModelViewSet
+from rest_framework.permissions import IsAuthenticated
 
-from app.mixins import OwnerMixin, UserFilterMixin
 from app.books.models import Book
+from app.books.serializers import BookSerializer
+from app.mixins import OwnerMixin
+from app.permissions import IsOwner
 
 
 # Create your views here.
-class BookCreateView(OwnerMixin, LoginRequiredMixin, generic.CreateView):
-    """Create a book"""
+class BookViewSet(OwnerMixin, ModelViewSet):
+    """Create, read, update and delete Books"""
 
-    model = Book
-    fields = ["title", "description"]
-    success_url = reverse_lazy("books:book_list")
+    queryset = Book.objects.prefetch_related("user")
+    serializer_class = BookSerializer
+    permission_classes = [IsAuthenticated]
+    filterset_fields = ["user", "title"]
+    search_fields = ["title", "user", "description"]
+    ordering_fields = ["title", "created_at", "updated_at"]
 
+    def get_permissions(self):
+        """Allow read access to all users"""
 
-class BookListView(generic.ListView):
-    """Display a list of books"""
+        if self.action in ["create", "update", "partial_update", "delete"]:
+            self.permission_classes = [IsAuthenticated, IsOwner]
 
-    model = Book
-
-
-class BookDetailView(generic.DetailView):
-    """Display a book"""
-
-    model = Book
-
-
-class BookUpdateView(UserFilterMixin, LoginRequiredMixin, generic.UpdateView):
-    """Update a book"""
-
-    model = Book
-    fields = ["title", "description"]
-    success_url = reverse_lazy("books:book_list")
-
-
-class BookDeleteView(UserFilterMixin, LoginRequiredMixin, generic.DeleteView):
-    """Delete a book"""
-
-    model = Book
-    success_url = reverse_lazy("books:book_list")
+        return super().get_permissions()

@@ -5,11 +5,8 @@
 class OwnerMixin:
     """Adds the owner of the object"""
 
-    def form_valid(self, form):
-        object = form.save(commit=False)
-        object.user = self.request.user
-
-        return super().form_valid(form)
+    def perform_create(self, serializer):
+        serializer.save(user=self.request.user)
 
 
 class UserFilterMixin:

@@ -1,17 +1,16 @@
 """ Main App URLConf """
 
 from django.urls import path, include
+from rest_framework.routers import DefaultRouter
 
-from app import views
+from app.books.views import BookViewSet
 
 
 # Create your URlConf here.
+router = DefaultRouter()
+router.register("books", BookViewSet, "book")
+
+
 urlpatterns = [
-    path("", views.IndexView.as_view(), name="index"),
-    path("about/", views.AboutView.as_view(), name="about"),
-    # Auth
-    path("accounts/", include("django.contrib.auth.urls")),
-    path("accounts/profile/", views.ProfileView.as_view(), name="profile"),
-    # Book urls
-    path("", include("app.books.urls")),
+    path("", include(router.urls)),
 ]
