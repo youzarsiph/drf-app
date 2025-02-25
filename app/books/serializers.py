@@ -1,4 +1,4 @@
-""" Serializers for app.books """
+"""Serializers for app.books"""
 
 from rest_framework.serializers import ModelSerializer
 

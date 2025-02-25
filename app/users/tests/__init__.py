@@ -1,1 +1,1 @@
-""" Tests for app.users """
+"""Tests for app.users"""

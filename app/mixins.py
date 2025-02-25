@@ -1,4 +1,4 @@
-""" Generic view mixins """
+"""Generic view mixins"""
 
 
 # Create your mixins here.

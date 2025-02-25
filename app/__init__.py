@@ -1,1 +1,1 @@
-""" Main App """
+"""Main App"""

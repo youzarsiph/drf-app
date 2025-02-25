@@ -1,1 +1,1 @@
-""" This an example on how to structure sub apps """
+"""This an example on how to structure sub apps"""

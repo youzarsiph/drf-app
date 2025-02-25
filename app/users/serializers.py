@@ -1,4 +1,4 @@
-""" Serializers for app.Users """
+"""Serializers for app.Users"""
 
 from rest_framework.serializers import ModelSerializer
 

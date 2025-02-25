@@ -1,1 +1,1 @@
-""" Tests for app.books """
+"""Tests for app.books"""
