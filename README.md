@@ -5,6 +5,8 @@
 [![Code Style: Black](https://github.com/youzarsiph/drf-app/actions/workflows/black.yml/badge.svg)](https://github.com/youzarsiph/drf-app/actions/workflows/black.yml)
 [![Code Linting: Ruff](https://github.com/youzarsiph/drf-app/actions/workflows/ruff.yml/badge.svg)](https://github.com/youzarsiph/drf-app/actions/workflows/ruff.yml)
 [![Code Testing](https://github.com/youzarsiph/drf-app/actions/workflows/tests.yml/badge.svg)](https://github.com/youzarsiph/drf-app/actions/workflows/tests.yml)
+[![Docker Image](https://github.com/youzarsiph/drf-app/actions/workflows/docker-image.yml/badge.svg)](https://github.com/youzarsiph/drf-app/actions/workflows/docker-image.yml)
+[![Docker Publish](https://github.com/youzarsiph/drf-app/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/youzarsiph/drf-app/actions/workflows/docker-publish.yml)
 [![PyPI - Version](https://img.shields.io/pypi/v/drf-app?logo=pypi&logoColor=white)](https://pypi.org/project/drf-app/)
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/drf-app?logo=python&logoColor=white)](https://pypi.org/project/drf-app/)
 [![PyPI - Downloads](https://img.shields.io/pypi/dm/drf-app?logo=pypi&logoColor=white)](https://pypi.org/project/drf-app/)
